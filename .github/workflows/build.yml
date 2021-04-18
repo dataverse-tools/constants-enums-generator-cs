@@ -38,6 +38,7 @@ jobs:
         run: |
           cd ${env:GITHUB_WORKSPACE}
           cd s
+          Get-Location
 
       - name: Restore packages
         run: nuget restore Ceg.sln
