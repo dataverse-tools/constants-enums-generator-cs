@@ -39,10 +39,10 @@ jobs:
         run: nuget restore Ceg.sln
         
       - name: Build
-        run: msbuild.exe Ceg.sln /p:outdir="../b" /p:platform="any cpu" /p:configuration="release" /nr:false /nologo      
+        run: msbuild.exe Ceg.sln /p:outdir="output" /p:platform="any cpu" /p:configuration="release" /nr:false /nologo      
   
       - name: Publish artifacts
         uses: actions/upload-artifact@v2
         with:
           name: ceg-cs
-          path: ../b/*
+          path: output/*
