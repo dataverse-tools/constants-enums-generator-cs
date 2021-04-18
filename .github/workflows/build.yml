@@ -25,8 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout sources
         uses: actions/checkout@v2
-        with:
-          path: s
         
       - name: Setup NuGet
         uses: NuGet/setup-nuget@v1
@@ -35,10 +33,7 @@ jobs:
         uses: microsoft/setup-msbuild@v1
         
       - name: Navigate to sources
-        run: |
-          cd ${env:GITHUB_WORKSPACE}
-          cd s
-          Get-Location
+        run: cd ${env:GITHUB_WORKSPACE}
 
       - name: Restore packages
         run: nuget restore Ceg.sln
