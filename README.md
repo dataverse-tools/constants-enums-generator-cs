@@ -1,6 +1,6 @@
 # Constants and Enums Generator for MS Dataverse (formerly CDS)
 
-[![Build status](https://dev.azure.com/power-platform-tools/dataverse-tools/_apis/build/status/constants-enums-generator-cs-import?branchName=working)](https://dev.azure.com/power-platform-tools/dataverse-tools/_build/latest?definitionId=1&branchName=working)
+[![Build](https://github.com/dataverse-tools/constants-enums-generator-cs/actions/workflows/build.yml/badge.svg?branch=working)](https://github.com/dataverse-tools/constants-enums-generator-cs/actions/workflows/build.yml)
 
 This utility can be used to generate constants and enums from MS Dataverse tables (formerly CDS entities) metadata in C# language to simplify further development.
 Primarily, it is intended to help when late-bound development approach is used.
