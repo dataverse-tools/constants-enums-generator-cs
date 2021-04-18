@@ -35,7 +35,9 @@ jobs:
         uses: microsoft/setup-msbuild@v1
         
       - name: Navigate to sources
-        run: cd $GITHUB_WORKSPACE/s
+        run: |
+          cd $GITHUB_WORKSPACE
+          cd s
 
       - name: Restore packages
         run: nuget restore Ceg.sln
