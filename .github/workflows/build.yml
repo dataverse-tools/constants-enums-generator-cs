@@ -32,6 +32,13 @@ jobs:
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1
         
+      - uses: actions/cache@v2
+        with:
+          path: ~/.nuget/packages
+          key: ${{ runner.os }}-nuget-${{ hashFiles('**/packages.lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-nuget-
+        
       - name: Navigate to sources
         run: cd ${env:GITHUB_WORKSPACE}
 
