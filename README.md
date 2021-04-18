@@ -1,7 +1,7 @@
 # Constants and Enums Generator for MS Dataverse (formerly CDS)
 
 [![Build](https://github.com/dataverse-tools/constants-enums-generator-cs/actions/workflows/build.yml/badge.svg?branch=working)](https://github.com/dataverse-tools/constants-enums-generator-cs/actions/workflows/build.yml)
-[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6ImRhdGF2ZXJzZS10b29scyIsInJlcG8xIjoiY29uc3RhbnRzLWVudW1zLWdlbmVyYXRvci1jcyIsImluY2x1ZGVMaW50IjpmYWxzZSwiYXV0aG9ySWQiOjI5MjI5LCJpYXQiOjE2MTg3NjQ1ODh9.0sYQwrn9UwWt11ZXTebmwDPPVC6cr-SFEsAObtaVed4)](https://www.deepcode.ai/app/gh/dataverse-tools/constants-enums-generator-cs/_/dashboard?utm_content=gh%2Fdataverse-tools%2Fconstants-enums-generator-cs)
+[![deepcode](https://www.deepcode.ai/api/gh/badge?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwbGF0Zm9ybTEiOiJnaCIsIm93bmVyMSI6ImRhdGF2ZXJzZS10b29scyIsInJlcG8xIjoiY29uc3RhbnRzLWVudW1zLWdlbmVyYXRvci1jcyIsImluY2x1ZGVMaW50IjpmYWxzZSwiYXV0aG9ySWQiOjI5MjI5LCJpYXQiOjE2MTg3NjQ1ODh9.0sYQwrn9UwWt11ZXTebmwDPPVC6cr-SFEsAObtaVed4)](https://www.deepcode.ai/app/gh/dataverse-tools/constants-enums-generator-cs/f3ed09908b98a56300e243d7db5acb119e36f837/_/dashboard)
 
 This utility can be used to generate constants and enums from MS Dataverse tables (formerly CDS entities) metadata in C# language to simplify further development.
 Primarily, it is intended to help when late-bound development approach is used.
