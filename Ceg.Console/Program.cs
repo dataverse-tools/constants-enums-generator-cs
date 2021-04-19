@@ -46,7 +46,7 @@ namespace Ceg.ConsoleApp
 
         private static void ProcessParserErrors(IEnumerable<Error> errors)
         {
-            var msg = errors.Aggregate("Failed to parse tool arguments:\n", (current, err) => current + $"\t- {err.ToString()}\n");
+            var msg = errors.Aggregate("Failed to parse tool arguments:\n", (current, err) => current + $"\t- {err}\n");
             _logger.Error(msg);
         }
     }
