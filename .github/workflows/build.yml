@@ -50,7 +50,7 @@ jobs:
         run: msbuild.exe Ceg.sln /p:outdir="output" /p:platform="any cpu" /p:configuration="release" /nr:false /nologo      
   
       - name: Publish artifacts
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: ceg-cs
           path: Ceg.Console/output/*
