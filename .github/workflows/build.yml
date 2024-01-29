@@ -34,7 +34,7 @@ jobs:
         uses: actions/checkout@v4.1.1
         
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v1.3.1
+        uses: microsoft/setup-msbuild@v1.3.2
       
       # Caching isn't efficient
       # - name: Cache NuGet packages
