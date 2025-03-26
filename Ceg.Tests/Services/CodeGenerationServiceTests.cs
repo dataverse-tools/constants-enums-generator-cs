@@ -37,11 +37,11 @@ namespace Ceg.Services.Tests
         [TestMethod]
         public void NormalizeLabelTest_InvalidFallback()
         {
-            Assert.ThrowsException<ArgumentNullException>(() => _service.NormalizeLabel(null, null));
-            Assert.ThrowsException<ArgumentNullException>(() => _service.NormalizeLabel(null, string.Empty));
-            Assert.ThrowsException<ArgumentException>(() => _service.NormalizeLabel(null, "5bears"));
-            Assert.ThrowsException<ArgumentException>(() => _service.NormalizeLabel(null, "Three bears"));
-            Assert.ThrowsException<ArgumentException>(() => _service.NormalizeLabel(null, "ThreeBears&FiveWolves"));
+            Assert.ThrowsExactly<ArgumentNullException>(() => _service.NormalizeLabel(null, null));
+            Assert.ThrowsExactly<ArgumentNullException>(() => _service.NormalizeLabel(null, string.Empty));
+            Assert.ThrowsExactly<ArgumentException>(() => _service.NormalizeLabel(null, "5bears"));
+            Assert.ThrowsExactly<ArgumentException>(() => _service.NormalizeLabel(null, "Three bears"));
+            Assert.ThrowsExactly<ArgumentException>(() => _service.NormalizeLabel(null, "ThreeBears&FiveWolves"));
         }
     }
 }
