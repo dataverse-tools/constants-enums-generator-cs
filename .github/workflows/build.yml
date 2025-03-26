@@ -31,10 +31,10 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout sources
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
         
       - name: Setup MSBuild
-        uses: microsoft/setup-msbuild@v2.0.0
+        uses: microsoft/setup-msbuild@v2
       
       # Caching isn't efficient
       # - name: Cache NuGet packages
@@ -55,7 +55,7 @@ jobs:
         run: msbuild.exe ${{ env.SOLUTION_FILENAME }} /p:outdir="output" /p:platform="any cpu" /p:configuration="release" /nr:false /nologo
         
       - name: Publish artifacts
-        uses: actions/upload-artifact@v4.6.0
+        uses: actions/upload-artifact@v4
         with:
           name: ceg-cs
           path: Ceg.Console/output/*
