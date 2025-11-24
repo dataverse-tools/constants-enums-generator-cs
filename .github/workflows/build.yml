@@ -31,7 +31,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout sources
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v2
